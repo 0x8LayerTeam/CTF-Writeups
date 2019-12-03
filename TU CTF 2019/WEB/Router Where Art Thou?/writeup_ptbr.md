@@ -11,6 +11,7 @@
 
 # Solução:
 Como o nome do desafio fala sobre roteador e a descrição sobre invadir uma página de login, nada melhor que tentar algumas senhas "defaults" dos roteadores.
+
 Comecei por "admin/admin":
 ![RouterWhereArtThow? - Página Web](router1.png)
 E, então, aqui está a flag:
