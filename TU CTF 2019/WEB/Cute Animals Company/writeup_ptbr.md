@@ -9,7 +9,7 @@
 ![CuteAnimalCompany - Chall](cute0.png)
 
 # Solução:
-Acessando o link temos:
+Acessando o link, temos:
 ![CuteAnimalCompany - Página Web](cute1.png)
 Porém não obtivemos muitos resultados, então rodei o dirb em cima do site:
 ![CuteAnimalCompany - dirb](cute2.png)
