@@ -11,7 +11,7 @@
 # Solução:
 Acessando o link, temos:
 ![CuteAnimalCompany - Página Web](cute1.png)
-Porém não obtivemos muitos resultados, então rodei o dirb em cima do site:
+Porém, não obtivemos muitos resultados, então rodei o dirb em cima do site:
 ![CuteAnimalCompany - dirb](cute2.png)
 Ao acessar "/admin.php", somos redirecionados para "/loginform.html", então tentei um sql injection no formulário:
 ![CuteAnimalCompany - SQL Injection](cute3.png)
