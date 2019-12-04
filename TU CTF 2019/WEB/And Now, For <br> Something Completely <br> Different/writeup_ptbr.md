@@ -15,7 +15,7 @@ Analisando o código fonte encontramos um diretório:
 ![AndNowForSomethingCompletelyDifferent - Diretório encontrado](andnow2.png)
 E, acessando o "/welcome/test", temos:
 ![AndNowForSomethingCompletelyDifferent - Diretório welcome](andnow3.png)
-Depois de testar alguns paylods, cheguei ao Server-Side Template Injection (SSTI), com o payload {{7*7}}:
+Depois de testar alguns payloads, cheguei ao Server-Side Template Injection (SSTI) com o payload {{7*7}}:
 ![AndNowForSomethingCompletelyDifferent - SSTI 49](andnow4.png)
 E descobri que estava rodando Tornado no servidor, pois em uns dos payloads que eu testei me retornou um erro com o path do Tornado e assim procurei outros payloads para o Tornado.
 
