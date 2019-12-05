@@ -1,6 +1,6 @@
 # Sonic
 
-**Categoria: Rev**
+**Categoria: Crypto**
 
 # Descrição:
 > Gotta go fast
