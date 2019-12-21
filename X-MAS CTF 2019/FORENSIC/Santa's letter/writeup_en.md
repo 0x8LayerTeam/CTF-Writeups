@@ -9,7 +9,7 @@
 
 # Solve
 
-Once you download the filer linked in the above description, you find an image called *challenge.png*, as shown ahead:
+Once you download the file linked in the above description, you find an image called *challenge.png*, as shown ahead:
 
 <img src="image1.png">
 
@@ -17,7 +17,7 @@ So, since there was a *Hide&Seek* hint on the description, we used DIIT (Digital
 
 <img src="image2.png">
 
-After that, we simply checke the *flag_chall.out* file content, as follows:
+After that, we simply checked the *flag_chall.out* file content, as follows:
 
 ```bash
 cat /root/flag_chall.out
