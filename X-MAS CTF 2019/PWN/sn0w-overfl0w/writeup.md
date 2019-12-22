@@ -1,5 +1,5 @@
 # Writeup "Sn0w Overfl0w" - XMAS-CTF 2019
-## Categories: pwn, Return Oriented Programming (ROP), Buffer Overflow (BOF), leaking libc
+#### Categories: pwn, Return Oriented Programming (ROP), Buffer Overflow (BOF), leaking libc
 
 A challenge nos oferece apenas um binário que o nomearemos como "chall".
 
