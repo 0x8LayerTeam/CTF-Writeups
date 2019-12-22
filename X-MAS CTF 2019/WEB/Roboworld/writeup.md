@@ -21,7 +21,7 @@ Então temos aqui uma tela de login onde podemos tentar alguns tipos de injectio
 
 ![Leak](print2-leak.py.png)
 
-Fazendo um code review, podemos pegar o usuário/senha (linha 21) e a chave privada (linha 36) que está sendo substituída por uns `XXXXXXXXXXXXXX`, deixando assim a chave sempre inválida. Testando essa combinação de usuário e senha na página web, não obtive um bom retorno, então analisei o código novamente e descobri uma falha na linha 19, que é possível inserir o valor `{}` para alterar a atribuição do valor e é nesse ponto que iremos atacar para explorar essa falha.
+Fazendo um code review, podemos pegar o usuário/senha (linha 21) e a chave privada (linha 36) que está sendo substituída por uns `XXXXXXXXXXXXXX`, deixando assim a chave sempre inválida. Testando essa combinação de usuário e senha na página web, não obtive um bom retorno, então analisei o código novamente e descobri uma falha na linha 19, que é possível inserir um `{}` e alterar a atribuição do valor... É nesse ponto que iremos atacar para explorar essa falha.
 
 ![Login Failed](print3-login-burp.png)
 
