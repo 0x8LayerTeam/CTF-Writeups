@@ -45,7 +45,7 @@ Bom, agora temos 3 arquivos interessantes que devemos analisar.  Nas duas imagen
 ![img2](098c533dc5420628a9f51c1911198c4c.jpg)
 ![video](print7-wtf.mp4.png)
 
-Obviamente ela não está no formato correto pois está invertida, mas para corrigir vamos executar o comando `echo -n '}o.0_?tob0R_3hT_1_mA{SAM-X' | rev`
+Obviamente ela não está no formato correto pois está invertida, mas para corrigir vamos executar o comando `echo '}o.0_?tob0R_3hT_1_mA{SAM-X' | rev`
 
 ![Flag](print8-flag.png)
 
