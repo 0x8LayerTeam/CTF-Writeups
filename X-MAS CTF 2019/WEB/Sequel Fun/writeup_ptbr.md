@@ -14,7 +14,7 @@
 Acessando o site, como é dito na descrição do desafio, nos deparamos com uma página de login:
 ![SequelFun - Página Web](sequel1.png)
 
-Olha o código fonte, temos um "/?source=1" comentado:
+Olhando o código fonte, temos um "/?source=1" comentado:
 ![SequelFun - Código Fonte HTML](sequel2.png)
 
 Acessando "/?source=1", temos o código fonte do "index.php", onde nós encontramos o formulário de login e uma consulta SQL:
@@ -33,7 +33,7 @@ Logo, o planejamento para explorar esse desafio foi o seguinte:
 
 1º - Logar como "elf", para ter uma ideia de como é a requisição quando a query é aceita;
 
-2º - Explorar o SQL Injection, porém sem usar query que contenham o carácter "1";
+2º - Explorar o SQL Injection, porém sem usar querys que contenham o carácter "1";
 
 3º - Verificar quais usuários diferentes de "elf" existem e logar neles, pois possívelmente terão mais privilégios que o usuário "elf".
 
@@ -50,7 +50,7 @@ Porém, ao logar como "admin", obtivemos o erro "I don't like numer 1 :(":
 
 Ou seja, não tem como logar diretamente no usuário "admin" pois a senha dele tem o carácter "1", então vamos tentar uma segunda forma.
 
-A segunda forma era bem mais simples do que o UNION BASED, na verdade, se chutassemos "admin" como usuário e testassemos uma "query" booleana no campo senha, teriamos conseguido logar:
+A segunda forma era bem mais simples do que o UNION BASED, na verdade, se chutassemos "admin" como usuário e testassemos uma "query" booleana, teríamos conseguido logar:
 
 Payload: ```"http://challs.xmas.htsp.ro:11006/?user=admin&pass=' or '2'='2"``` (observe: sem usar o carácter "1")
 ![SequelFun - Usuário "admin"](sequel7.png)
