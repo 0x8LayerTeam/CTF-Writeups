@@ -8,6 +8,7 @@ fex0r:~/.ctf/xmas-ctf/sn0w-overfl0w# ./chall
 Helloooooo, do you like to build snowmen?
 
 Visualizando as chamadas para libraries que o binário faz, podemos reparar que ele executa um strcmp do nosso input com o texto "yes":
+```
 fex0r:~/.ctf/xmas-ctf/sn0w-overfl0w# ltrace ./chall
 setvbuf(0x7fbbf81f3a00, 0, 2, 0)                                                                             = 0
 setvbuf(0x7fbbf81f4760, 0, 2, 0)                                                                             = 0
@@ -15,7 +16,7 @@ puts("Helloooooo, do you like to build"...Helloooooo, do you like to build snowm
 read(yes, "yes\n", 100)                                                                                     = 4
 strcmp("yes\n", "yes")                                                                                       = 10
 puts("Mhmmm... Boring..."Mhmmm... Boring...)
-
+```
 Na verdade, teriamos que introduzir o "yes" de forma que o caractere newline ("\n") nao entrasse no input, de forma que o strcmp retornasse true, porém todo esse processo demonstrou-se desnecessário ao analisarmos o binário com GDB e descobrirmos um buffer overflow no binário.
 
 ## Binário Stripped
