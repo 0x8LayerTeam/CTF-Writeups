@@ -17,19 +17,19 @@ Acessando o site, como é dito na descrição do desafio, nos deparamos com uma 
 Olha o código fonte, temos um "/?source=1" comentado:
 ![SequelFun - Código Fonte HTML](sequel2.png)
 
-Acessando "/?source=1", temos o código fonte da "index.php", onde nós encontramos o formulário de login e uma consulta SQL:
+Acessando "/?source=1", temos o código fonte do "index.php", onde nós encontramos o formulário de login e uma consulta SQL:
 ![SequelFun - Código Fonte PHP](sequel3.png)
 
 No código fonte acima, vale analisar alguns pontos do código:
 
-1º - A função strpos do PHP, que está verificando se há o carácter "1" nos valores passados como user e pass;
+1º - A função strpos do PHP está verificando se há o carácter "1" nos valores passados como user e pass;
 
 2º - Existe uma consulta SQL para o login, porém ela está vulnerável a SQL Injection;
 
 3º - Também existe um comentário no PHP, na frente da query SQL, que fala sobre remover uma conta "elf:elf" (user:pass).
 
 
-Logo, o planejamento para explorar esse desafio é o seguinte:
+Logo, o planejamento para explorar esse desafio foi o seguinte:
 
 1º - Logar como "elf", para ter uma ideia de como é a requisição quando a query é aceita;
 
