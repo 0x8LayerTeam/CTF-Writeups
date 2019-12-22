@@ -19,7 +19,7 @@ read(yes, "yes\n", 100)                                                         
 strcmp("yes\n", "yes")                                                                                       = 10
 puts("Mhmmm... Boring..."Mhmmm... Boring...)
 ```
-Na verdade, teriamos que introduzir o "yes" de forma que o caractere newline ("\n") nao entrasse no input, de forma que o strcmp retornasse true, porém todo esse processo demonstrou-se desnecessário ao analisarmos o binário com GDB e descobrirmos um buffer overflow no binário.
+Na verdade, teriamos que introduzir o "yes" de forma que o caractere newline ("\n") nao entrasse no input, de forma que o strcmp retornasse true, porém todo esse processo demonstrou-se desnecessário ao analisarmos o binário com GDB e ghidra, descobrindo então a existência de um buffer overflow no binário.
 
 ## Binário Stripped
 Como se trata de um binário stripped, teremos que achar a função main manualmente, podemos fazer isso da seguinte forma:
