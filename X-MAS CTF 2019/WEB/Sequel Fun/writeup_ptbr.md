@@ -41,7 +41,8 @@ Logando como "elf", temos:
 ![SequelFun - Usuário "elf"](sequel4.png)
 
 A exploração do SQL Injection era bem simples, apenas um SQL Injection UNION BASED:
-Payload: ```"http://challs.xmas.htsp.ro:110066/?user=' union select null,group_concat(user, 0x3a, pass),null from% users -- &pass="```
+
+Payload: ```"http://challs.xmas.htsp.ro:110066/?user=' union select null,group_concat(user, 0x3a, pass),null from users -- &pass="```
 ![SequelFun - Exploração do SQL Injection](sequel5.png)
 
 Porém, ao logar como "admin", obtivemos o erro "I don't like numer 1 :(":
@@ -50,6 +51,7 @@ Porém, ao logar como "admin", obtivemos o erro "I don't like numer 1 :(":
 Ou seja, não tem como logar diretamente no usuário "admin" pois a senha dele tem o carácter "1", então vamos tentar uma segunda forma.
 
 A segunda forma era bem mais simples do que o UNION BASED, na verdade, se chutassemos "admin" como usuário e testassemos uma "query" booleana no campo senha, teriamos conseguido logar:
+
 Payload: ```"http://challs.xmas.htsp.ro:11006/?user=admin&pass=' or '2'='2"``` (observe: sem usar o carácter "1")
 ![SequelFun - Usuário "admin"](sequel7.png)
 
