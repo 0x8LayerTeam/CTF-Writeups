@@ -4,8 +4,10 @@
 A challenge nos oferece apenas um binário que o nomearemos como "chall".
 
 Executando o binário, obtemos um prompt para "Helloooooo, do you like to build snowmen?" como demonstrado a seguir:
+```
 fex0r:~/.ctf/xmas-ctf/sn0w-overfl0w# ./chall                                                
 Helloooooo, do you like to build snowmen?
+```
 
 Visualizando as chamadas para libraries que o binário faz, podemos reparar que ele executa um strcmp do nosso input com o texto "yes":
 ```
