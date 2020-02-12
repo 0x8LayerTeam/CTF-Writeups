@@ -7,6 +7,7 @@ Acessando o nosso alvo temos a seguinte tela de login.
 ![Login Page](images/login-page.png)
 
 Como o próprio nome da Chall nos sugere, vamos começar realizando um ataque de SQL Injection, utilizando o seguinte payload no `username` e no `password`.  
+  
 **Payload:**
 ```sql
 ' or 1=1 or ''='
