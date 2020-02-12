@@ -1,6 +1,6 @@
 Seguindo boas práticas de CTF, e sempre olhar a descrição da chall ou box. Nesse caso, não temos nenhuma descrição que possa nos servir de dica, porém o nome da Chall (SQL Breaker 2) já nos dar um bom norte.  
 
-![Description](images/description.png.png)
+![Description](images/description.png)
 
 Acessando o nosso alvo temos a seguinte tela de login.  
 
