@@ -57,6 +57,7 @@ def main():
 if __name__ == "__main__":
 	main()
 ```
+*¹ (esse script pode ser encontrado aqui nesse github)
 
 A cada resposta do servidor, o script verifica se é igual a ```pip``` ou ```piiiip```, se for igual ao primeiro, o script adiciona a variável ```valores_c``` o caracter ```.```,ou se for igual ao segundo, o script adiciona a mesma variável o caracter ```-```, mas se não for nem ```pip``` e nem ```piiiip```, o script adiciona um espaço a variável.
 ![MindPalaceI - UsandoScript](mindpalaceI_3.png)
@@ -65,7 +66,8 @@ Ao final do script é gerado um arquivo chamado ```mose.txt``` que contém todos
 ![MindPalaceI - ArquivoMorse](mindpalaceI_4.png)
 
 E usando um decoder online de morse, temos:
-![MindPalaceI - MorseDecode]()
+![MindPalaceI - MorseDecode](mindpalaceI_5.png)
+*²
 
 Com isso, temos a frase:
 SHERLOCKLIKESYOURMORSEHEREUPONTHELAPELOGMYCOATYOUMAYSEETHERIBBONOFMYDECORATIONBUTTHEMEDALITSELFIKEEPINALEATHERNPOUCHATHOME
@@ -74,3 +76,7 @@ Depois de muito bater a cabeça, fui conversar com o adm e a flag era uma parte 
 
 # Flag:
 ```flag{sherlock_likes_your_morse}```
+
+*¹ (github.com)
+
+*² (http://www.unit-conversion.info/texttools/morse-code/)
