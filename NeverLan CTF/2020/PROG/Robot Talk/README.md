@@ -15,10 +15,10 @@
 ![RobotTalk - Chall](robottalk_chall.png)
 
 # Solução:
-A descrição nós dá um servidor para conectar e ao conectar nesse servidor, temos:
+A descrição nos dá um servidor para conectar e ao conectar nesse servidor, temos:
 ![RobotTalk - Servidor](robottalk_1.png)
 
-O servidor nós dá um uma mensagem em base64 para decodificar.
+O servidor nos dá um uma mensagem em base64 para decodificar.
 
 Então, criamos um script para conectar no servidor (linha 7 a 12), receber as mensagens (linha 14 a 17), decodificar elas (linha 18) e enviar a palavra decodificada (linha 19).
 
