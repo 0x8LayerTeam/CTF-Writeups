@@ -77,6 +77,6 @@ Depois de muito bater a cabeça, fui conversar com o adm e a flag era uma parte 
 # Flag:
 ```flag{sherlock_likes_your_morse}```
 
-*¹ (github.com)
+*¹ (https://github.com/0x8Layer/CTF-Writeups/blob/master/SarCTF/2020/PPC/Mind%20Palace%20I/mindpalaceI_morse.py)
 
 *² (http://www.unit-conversion.info/texttools/morse-code/)
