@@ -32,7 +32,7 @@ if __name__ == "__main__":
 # Solução:
 Analisando a descrição, o desafio diz que foi recebico uma tarefa e essa tarefa é criar um script para contar os números primos e saber qual o número primo de posição 10,497, porém o script está com alguns erros:
 
-Na linha 12, temos que ele verifica se a váriavel ```isprime``` é verdadeira, porém essa váriavel é declarada como verdadeira sempre quando o a divisão é zero, ou seja, em um range um número poderia ter mais que uma divisão inteira, o que vai na contramão da definição de números primos: "Um número primo é aquele que é dividido apenas por um e por ele mesmo"*¹.
+Na linha 12, temos que ele verifica se a váriavel ```isprime``` é verdadeira, porém essa variável é declarada como verdadeira sempre quando o a divisão é zero, ou seja, em um range um número poderia ter mais que uma divisão inteira, o que vai na contramão da definição de números primos: "Um número primo é aquele que é dividido apenas por um e por ele mesmo"*¹.
 Sabendo disso, é possível ver que a váriavel que guarda números primos, ```primes```, está armazenando números que não são primos.
 
 Então, as modificações feitas foram:
@@ -66,6 +66,10 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+Na linha 18, verificamos se o tamanho do array dos números primos, ```primes```, é igual a 10497, que o valor desejado do número primo a ser encontrado.
+E se for, printamos o item do array no índice 10496 (já que para arrays primeiro índice é o 0).
+
 *² (esse código pode ser encontrado aqui nesse github).
 
 ![DasPrime - Flag](dasprime_flag_ed.png)
