@@ -16,7 +16,7 @@
 
 # Solução:
 A descrição nós dá um servidor para conectar e ao conectar nesse servidor, temos:
-![RobotTalk - Servidor]()
+![RobotTalk - Servidor](robottalk_1.png)
 
 O servidor nós dá um uma mensagem em base64 para decodificar.
 
@@ -53,7 +53,7 @@ if __name__ == "__main__":
 
 Foi utilizado um loop, pois são várias mensagens para decodificar.
 
-![password_crack - Flag](passcrack_flag_ed.png)
+![RobotTalk - Flag](robottalk_2.png)
 
 # Flag:
 ```flag{Ant1_hum4n}```
