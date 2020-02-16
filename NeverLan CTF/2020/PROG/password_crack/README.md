@@ -63,6 +63,6 @@ Na linha 18, verificamos se a hash gerada é igual a HASH que desejamos quebrar,
 # Flag:
 ```flag{orange-1984-zestyfe}```
 
-*¹ (github.com)
+*¹ (https://github.com/0x8Layer/CTF-Writeups/blob/master/NeverLan%20CTF/2020/PROG/password_crack/password_crack.py)
 
 *² (https://ctftime.org/team/32118)
