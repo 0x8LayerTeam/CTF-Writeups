@@ -37,9 +37,12 @@ Sabendo disso, é possível ver que a váriavel que guarda números primos, ```p
 
 Então, as modificações feitas foram:
 1º - Adicionar quantas vezes aquele número foi dividido inteiramente (linha 11);
-2º - Verificar se o número de divisores desse número é igual a 0, pois como o range inicia-se no número 2 e termina antes do número que será verificado - se é primo ou não - (linha 9), logo para o número ser primo ele deverá não ter nenhum divisor, já que foi removido o número 1 (todo número é dividido por 1) e também foi removido o próprio número (todo número é dividido por si mesmo), então, se o divisor for maior que 0 (é divisível por algum outro número além dele mesmo e do número 1 - definição de números primos), ele não é primo.
+2º - Verificar se o número de divisores desse número é igual a 0, pois como o range inicia-se no número 2 e termina antes do número que será verificado - se é primo ou não - (linha 12), logo para o número ser primo ele deverá não ter nenhum divisor, já que foi removido o número 1 (todo número é dividido por 1) e também foi removido o próprio número (todo número é dividido por si mesmo), então, se o divisor for maior que 0 (é divisível por algum outro número além dele mesmo e do número 1 - definição de números primos), ele não é primo.
 
 ```
+#!/usr/bin/python
+#-*- coding: utf-8 -*-
+
 import math
 
 def main():
@@ -70,4 +73,4 @@ if __name__ == "__main__":
 Fontes:
 * (https://brasilescola.uol.com.br/o-que-e/matematica/o-que-e-numero-primo.htm)
 
-** (https://github.com/)
+** (https://github.com/0x8Layer/CTF-Writeups/blob/master/NeverLan%20CTF/2020/PROG/DasPrime/isprime.py)
