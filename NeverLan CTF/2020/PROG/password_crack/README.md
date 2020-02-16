@@ -59,7 +59,7 @@ E na linha 14, concatenamos todos esses valores na variável ```hashencode``` e,
 
 Na linha 18, verificamos se a hash gerada é igual a HASH que desejamos quebrar, e se for, printamos a HASH e a variável ```hashencode```, que contém os valores concatenados.
 
-![password_crack - Flag](passcrack_flag.png)
+![password_crack - Flag](passcrack_flag_ed.png)
 # Flag:
 ```flag{orange-1984-zestyfe}```
 
