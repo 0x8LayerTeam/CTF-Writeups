@@ -64,7 +64,7 @@ A ideia do desafio era simples:
 
 3º - Encontrar a mensagem que o servidor deseja que a gente decodifique e decodificar a mesma(linha 21 e 22);
 
-4º - Para decodificar a mensagem, usei a biblioteca ```codecs``` (linha 4 e 22);
+4º - Para decodificar a mensagem, usei a biblioteca ```codecs``` (linha 4 e 22).
 
 ![MindPalaceII - UsandoScript](mindpalaceII_3.png)
 
