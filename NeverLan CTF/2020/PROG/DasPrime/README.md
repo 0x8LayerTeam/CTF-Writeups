@@ -68,6 +68,8 @@ if __name__ == "__main__":
 ```
 *² (esse código pode ser encontrado aqui nesse github).
 
+![DasPrime - Flag](dasprime_flag_ed.png)
+
 # Flag:
 ```110573```
 
