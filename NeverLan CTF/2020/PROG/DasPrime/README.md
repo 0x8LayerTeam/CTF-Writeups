@@ -32,11 +32,12 @@ if __name__ == "__main__":
 # Solução:
 Analisando a descrição, o desafio diz que foi recebico uma tarefa e essa tarefa é criar um script para contar os números primos e saber qual o número primo de posição 10,497, porém o script está com alguns erros:
 
-Na linha 12, temos que ele verifica se a váriavel ```isprime``` é verdadeira, porém essa váriavel é declarada como verdadeira sempre quando o a divisão é zero, ou seja, em um range um número poderia ter mais que uma divisão inteira, o que vai na contramão da definição de números primos: "Um número primo é aquele que é dividido apenas por um e por ele mesmo"*.
+Na linha 12, temos que ele verifica se a váriavel ```isprime``` é verdadeira, porém essa váriavel é declarada como verdadeira sempre quando o a divisão é zero, ou seja, em um range um número poderia ter mais que uma divisão inteira, o que vai na contramão da definição de números primos: "Um número primo é aquele que é dividido apenas por um e por ele mesmo"*¹.
 Sabendo disso, é possível ver que a váriavel que guarda números primos, ```primes```, está armazenando números que não são primos.
 
 Então, as modificações feitas foram:
 1º - Adicionar quantas vezes aquele número foi dividido inteiramente (linha 11);
+
 2º - Verificar se o número de divisores desse número é igual a 0, pois como o range inicia-se no número 2 e termina antes do número que será verificado - se é primo ou não - (linha 12), logo para o número ser primo ele deverá não ter nenhum divisor, já que foi removido o número 1 (todo número é dividido por 1) e também foi removido o próprio número (todo número é dividido por si mesmo), então, se o divisor for maior que 0 (é divisível por algum outro número além dele mesmo e do número 1 - definição de números primos), ele não é primo.
 
 ```
@@ -65,12 +66,12 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-** (esse código pode ser encontrado aqui nesse github).
+*² (esse código pode ser encontrado aqui nesse github).
 
 # Flag:
 ```110573```
 
 Fontes:
-* (https://brasilescola.uol.com.br/o-que-e/matematica/o-que-e-numero-primo.htm)
+*¹ (https://brasilescola.uol.com.br/o-que-e/matematica/o-que-e-numero-primo.htm)
 
-** (https://github.com/0x8Layer/CTF-Writeups/blob/master/NeverLan%20CTF/2020/PROG/DasPrime/isprime.py)
+*² (https://github.com/0x8Layer/CTF-Writeups/blob/master/NeverLan%20CTF/2020/PROG/DasPrime/isprime.py)
