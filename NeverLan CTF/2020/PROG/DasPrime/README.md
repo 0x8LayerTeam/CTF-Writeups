@@ -69,7 +69,7 @@ if __name__ == "__main__":
 
 Na linha 18, verificamos se o tamanho do array dos números primos, ```primes```, é igual a 10497, que o valor desejado do número primo a ser encontrado.
 
-E se for, printamos o item do array no índice 10496 (já que para arrays primeiro índice é o 0).
+E se for, printamos o item do array no índice 10496 (já que para arrays o primeiro índice é o 0).
 
 *² (esse código pode ser encontrado aqui nesse github).
 
