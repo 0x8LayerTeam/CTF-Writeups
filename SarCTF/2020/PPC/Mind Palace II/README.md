@@ -12,7 +12,7 @@
 Ao conectar no servidor que o desafio nos deu, temos:
 ![MindPalaceII - Servidor](mindpalaceII_1.png)
 
-O servidor nos dá uma mensagem para decodificar e aí eu vi que era "ROT-13"*¹:
+O servidor nos dá uma mensagem para decodificar e aí eu vi que era "ROT-13" *¹ :
 ![MindPalaceII - ServidorRot13](mindpalaceII_2.png)
 
 Então, fiz o seguinte script:
