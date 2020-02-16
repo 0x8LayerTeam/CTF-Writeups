@@ -10,10 +10,10 @@
 
 # Solução:
 Ao conectar no servidor, temos:
-![MindPalaceIII - Servidor]()
+![MindPalaceIII - Servidor](mindpalaceIII_1.png)
 
 É possível ver que existe dois números e operadores lógicos*¹, dando a entender que você deve resolver aquele problema:
-![MindPalaceIII - ServidorResolver]()
+![MindPalaceIII - ServidorResolver](mindpalaceIII_2.png)
 
 Então, criei o seguinte script:
 
@@ -70,13 +70,13 @@ Explicando o script:
 
 6º- Na linha 31, enviamos o resultado da operação para o servidor.
 
-![MindPalaceIII - UsandoScript]()
+![MindPalaceIII - UsandoScript](mindpalaceIII_3.png)
 
-![MindPalaceIII - Flag]()
+![MindPalaceIII - Flag](mindpalaceIII_4.png)
 
 # Flag:
 ```FLAG{0HH_Y0UR3_4_V3RY_5M3RT_M4TH3M4T1C}```
 
 *¹ (https://python-reference.readthedocs.io/en/latest/docs/operators/index.html?highlight=logic#bitwise-operators)
 
-*² (github.com)
+*² (https://github.com/0x8Layer/CTF-Writeups/blob/master/SarCTF/2020/PPC/Mind%20Palace%20III/mindpalaceIII_oplogic.py)
