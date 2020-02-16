@@ -10,10 +10,10 @@
 
 # Solução:
 Ao conectar no servidor que o desafio nos deu, temos:
-![MindPalaceII - Servidor]()
+![MindPalaceII - Servidor](mindpalaceII_1.png)
 
 O servidor nos dá uma mensagem para decodificar e aí eu vi que era "rot_13":
-![MindPalaceII - ServidorRot13]()
+![MindPalaceII - ServidorRot13](mindpalaceII_2.png)
 
 Então, fiz o seguinte script:
 
@@ -66,11 +66,11 @@ A ideia do desafio era simples:
 
 4º - Para decodificar a mensagem, usei a biblioteca ```codecs``` (linha 4 e 22);
 
-![MindPalaceII - UsandoScript]()
+![MindPalaceII - UsandoScript](mindpalaceII_3.png)
 
-![MindPalaceII - Flag]()
+![MindPalaceII - Flag](mindpalaceII_4.png)
 
 # Flag:
 ```FLAG{Y0U_V3RY_F45T3R_CRYPT0GR4PH}```
 
-* (github.com)
+* (https://github.com/0x8Layer/CTF-Writeups/blob/master/SarCTF/2020/PPC/Mind%20Palace%20II/mindpalaceII_rot13.py)
