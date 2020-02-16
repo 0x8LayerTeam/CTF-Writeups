@@ -64,10 +64,11 @@ A cada resposta do servidor, o script verifica se é igual a ```pip``` ou ```pii
 
 Ao final do script é gerado um arquivo chamado ```mose.txt``` que contém todos os caracteres do código morse.
 ![MindPalaceI - ArquivoMorse](mindpalaceI_4.png)
+*² (esse arquivo pode ser encontrado aqui nesse github)
 
 E usando um decoder online de morse, temos:
 ![MindPalaceI - MorseDecode](mindpalaceI_5.png)
-*²
+*³
 
 Com isso, temos a frase:
 FLAGSHERLOCKLIKESYOURMORSEHEREUPONTHELAPELOGMYCOATYOUMAYSEETHERIBBONOFMYDECORATIONBUTTHEMEDALITSELFIKEEPINALEATHERNPOUCHATHOMEFLAG
@@ -79,4 +80,6 @@ Depois de muito bater a cabeça, fui conversar com o adm e a flag era uma parte 
 
 *¹ (https://github.com/0x8Layer/CTF-Writeups/blob/master/SarCTF/2020/PPC/Mind%20Palace%20I/mindpalaceI_morse.py)
 
-*² (http://www.unit-conversion.info/texttools/morse-code/)
+*² (https://github.com/0x8Layer/CTF-Writeups/blob/master/SarCTF/2020/PPC/Mind%20Palace%20I/morse.txt)
+
+*3 (http://www.unit-conversion.info/texttools/morse-code/)
