@@ -12,7 +12,7 @@
 Ao conectar no servidor que o desafio nos deu, temos:
 ![MindPalaceII - Servidor](mindpalaceII_1.png)
 
-O servidor nos dá uma mensagem para decodificar e aí eu vi que era "rot_13":
+O servidor nos dá uma mensagem para decodificar e aí eu vi que era "ROT13"*¹:
 ![MindPalaceII - ServidorRot13](mindpalaceII_2.png)
 
 Então, fiz o seguinte script:
@@ -55,7 +55,7 @@ def main():
 if __name__ == "__main__":
 	main()
 ```
-* (esse código pode ser encontrado aqui nesse github)
+*² (esse código pode ser encontrado aqui nesse github)
 
 A ideia do desafio era simples:
 1º - Conectar no servidor (linha 7 a 12);
@@ -73,4 +73,6 @@ A ideia do desafio era simples:
 # Flag:
 ```FLAG{Y0U_V3RY_F45T3R_CRYPT0GR4PH}```
 
-* (https://github.com/0x8Layer/CTF-Writeups/blob/master/SarCTF/2020/PPC/Mind%20Palace%20II/mindpalaceII_rot13.py)
+*¹ (https://pt.wikipedia.org/wiki/ROT13)
+
+*² (https://github.com/0x8Layer/CTF-Writeups/blob/master/SarCTF/2020/PPC/Mind%20Palace%20II/mindpalaceII_rot13.py)
