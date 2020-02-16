@@ -6,12 +6,12 @@
 >It looks like the situation is hopeless, there is no time to think. However, you can use the mind palace and solve all problems instantly.
 
 >nc 217.47.229.1 33001
-![MindPalaceI - Chall](palaceI_chall.png)
+![MindPalaceI - Chall](mindpalaceI_chall.png)
 
 # Solução:
 Ao conectar no servidor dado pela descrição, temos:
-![MindPalaceI - Servidor_pip]()
-![MindPalaceI - Servidor_piiiip]()
+![MindPalaceI - Servidor_pip](mindpalaceI_1.png)
+![MindPalaceI - Servidor_piiiip](mindpalaceI_2.png)
 
 O servidor ficava mandando ```pip```, ```piiiip```.
 Demorei um pouco pra entender que estava se tratando de código morse. Então, quando entendi, criei um script pra guardar todas as respostas do servidor em um arquivo.
@@ -59,10 +59,10 @@ if __name__ == "__main__":
 ```
 
 A cada resposta do servidor, o script verifica se é igual a ```pip``` ou ```piiiip```, se for igual ao primeiro, o script adiciona a variável ```valores_c``` o caracter ```.```,ou se for igual ao segundo, o script adiciona a mesma variável o caracter ```-```, mas se não for nem ```pip``` e nem ```piiiip```, o script adiciona um espaço a variável.
-![MindPalaceI - UsandoScript]()
+![MindPalaceI - UsandoScript](mindpalaceI_3.png)
 
 Ao final do script é gerado um arquivo chamado ```mose.txt``` que contém todos os caracteres do código morse.
-![MindPalaceI - ArquivoMorse]()
+![MindPalaceI - ArquivoMorse](mindpalaceI_4.png)
 
 E usando um decoder online de morse, temos:
 ![MindPalaceI - MorseDecode]()
