@@ -30,7 +30,7 @@ if __name__ == "__main__":
 ![DasPrime - Chall](dasprime_chall.png)
 
 # Solução:
-Analisando a descrição, o desafio diz que foi recebico uma tarefa e essa tarefa é criar um script para contar os números primos e saber qual o número primo de posição 10,497, porém o script está com alguns erros:
+Analisando a descrição, o desafio diz que foi recebido uma tarefa e essa tarefa é criar um script para contar os números primos e saber qual o número primo de posição 10,497, porém o script está com alguns erros:
 
 Na linha 12, temos que ele verifica se a váriavel ```isprime``` é verdadeira, porém essa variável é declarada como verdadeira sempre quando o a divisão é zero, ou seja, em um range um número poderia ter mais que uma divisão inteira, o que vai na contramão da definição de números primos: "Um número primo é aquele que é dividido apenas por um e por ele mesmo"*¹.
 Sabendo disso, é possível ver que a váriavel que guarda números primos, ```primes```, está armazenando números que não são primos.
