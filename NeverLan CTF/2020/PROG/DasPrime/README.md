@@ -72,6 +72,7 @@ if __name__ == "__main__":
 ```110573```
 
 Fontes:
+
 *¹ (https://brasilescola.uol.com.br/o-que-e/matematica/o-que-e-numero-primo.htm)
 
 *² (https://github.com/0x8Layer/CTF-Writeups/blob/master/NeverLan%20CTF/2020/PROG/DasPrime/isprime.py)
