@@ -3,12 +3,12 @@
 **Categoria: Programação**
 
 # Descrição:
-> (imagem_chall.png)
+![BannerDescritivo](times_chall.png)
 
 # Solução
 Pela descrição e pelo desenrolar do desafio, é possível entender que o servidor dará uma lista de habilidades para que se possa dividir em dois times: um time formado apenas por jogadores com habilidades iguais e outro time formado apenas por jogadores de habilidades diferente (NÃO PODE HAVER MAIS DE UM JOGADOR COM A MESMA HABILIDADE!).
 Estes são exemplos das listas de jogadores:
-(imagem.png)
+![Demonstração](times_1.png)
 
 Tendo essa informação, vamos ao script.
 Irei começar pela função main(). Ela simplesmente faz a conexão com o servidor e "ajeita" os valores recebidos de tal forma que fique "limpo" para a ser usado.
@@ -206,7 +206,7 @@ if __name__ == '__main__':
     main()
 ```
 A partir dessas explanações é só juntar tudo e pronto! :)
-(imagem_flag.png)
+![Flag](times_flag.png)
 
 
 # Flag:
