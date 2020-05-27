@@ -17,7 +17,7 @@ The bytes in the range 001A:001D store the archived filename's length and some e
     00000030: 5409 0003 f220 c35e ea24 c35e 7578 0b00  T.... .^.$.^ux..
     00000040: 0104 e803 0000 04e8 0300 0042 5a65 390c  ...........BZe9.
 
-filename length:    0x0011 = 17 bytes
+filename length:    0x0011 = 17 bytes  
 extra field length: 0x001C = 28 bytes
 
 So the archived file starts at 004B: 
@@ -29,9 +29,9 @@ So the archived file starts at 004B:
 
 A zip archive has two structures at it's end, the Central Directory Record (CDR) and the CDR End. Just before the CDR is the end of the archive's packed data. A zip file signature and it's internal headers all start with 0x504B ("PK") and has 4 bytes in total, being:
 
-0x504B0304: local file header (one for each file in the archive)
-0x504B0102: CDR
-0x504B0506: CDR End
+0x504B0304: local file header (one for each file in the archive)  
+0x504B0102: CDR  
+0x504B0506: CDR End  
 
 As there's only one local file header things get easier. We get all the bytes from 004B (75 bytes) to the ones before 0x504B0102, which is at 0x0AC7.
 
@@ -59,7 +59,7 @@ to this:
 In challenges like this it's very useful if you create a file yourself to check how a valid file is structured and it's values.
 
 
-Ok, so now we can open the project-files.bz2 archive, extract the project-files file and extract its content too. It is 3 PNG files, one of which (project-notes-1.png) is messed up. When this file is open in a hex editor, we get a cry for help:
+Ok, so now we can open the project-files.bz2 archive, extract the `project-files` file and extract its content too. It is 3 PNG files, one of which (project-notes-1.png) is messed up. When this file is open in a hex editor, we get a cry for help:
 
     $ xxd project-notes-1.png | head
     00000000: 4845 4c50 0d0a 1a0a 0000 000d 4948 4452  HELP........IHDR
