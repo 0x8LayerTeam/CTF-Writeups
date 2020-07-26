@@ -196,7 +196,7 @@ Now we just renamed a gif file with the malicious filename and uploaded it on th
 
 Done, after 5 seconds the base64 encoded flag will be sent through DNS!
 
-<img src="https://nullarmor.github.io/assets/ctf/cybrics/2020/gif2png/gif2png-04-bab35abb8f097541da9a97cabfe9d2c07e8434155e5fe0063f2e406835b4ff16.png">
+<img src="https://nullarmor.github.io/assets/ctf/cybrics/2020/gif2png/gif2png-05-0fad89d37c65771ad393721f96bd70d33d2f0776a76f4e901eee464832ced680.png">
 
 # Flag:
 ``` cybrics{imagesaresocoolicandrawonthem}```
