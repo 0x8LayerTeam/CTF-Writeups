@@ -2,7 +2,6 @@
 layout: post
 title: "cyBRICS CTF 2020 - Gif2png"
 description: "Resolution of the cyBRICS CTF challenge named Gif2png"
-thumb_image: "ctf/cybrics/2020/gif2png/gif2png-00.jpg"
 tags: [ctf,web,cybricsctf]
 ---
 
@@ -199,7 +198,7 @@ Done, after 5 seconds the base64 encoded flag will be sent through DNS!
 
 <img src="https://nullarmor.github.io/assets/ctf/cybrics/2020/gif2png/gif2png-04-bab35abb8f097541da9a97cabfe9d2c07e8434155e5fe0063f2e406835b4ff16.png">
 
-Flag:
-> cybrics{imagesaresocoolicandrawonthem}
+# Flag:
+``` cybrics{imagesaresocoolicandrawonthem}
 
 <img src="https://nullarmor.github.io/assets/ctf/cybrics/2020/gif2png/gif2png-06-0069647c11ff4ae14468d1673853c5adb6549af2350dfe82528b25e98fea8f07.png">
