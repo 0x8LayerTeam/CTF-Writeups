@@ -1,4 +1,4 @@
-1. # Keyshooter
+# Keyshooter
 
 **Categoria: Forensic**
 
