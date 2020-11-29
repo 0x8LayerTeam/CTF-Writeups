@@ -1,6 +1,6 @@
 # Tribocursão
 
-** Categoria: Programação**
+**Categoria: Programação**
 
 # Descrição:
 ![BannerDescritivo](bhack_tribo1.png)
