@@ -59,6 +59,7 @@ def tribonacci(n):
 O código final encontra-se nesse repositório, procure por: tribonacci_final.py
 
 Execução do código:
+
 ![Flag](bhack_triboflag.png)
 
 # Flag:
